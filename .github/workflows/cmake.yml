@@ -67,7 +67,8 @@ jobs:
           WaveshareZero,
           Stress,
           SGFDevices,
-          ZeroRhythm]
+          ZeroRhythm,
+          Flatbox-LED]
 
     steps:
     #Global Setup
