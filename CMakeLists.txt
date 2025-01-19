@@ -25,8 +25,8 @@ execute_process(COMMAND ${GIT_EXECUTABLE} describe --always --abbrev=7
 string(REGEX REPLACE "v([0-9]+\\.[0-9]+\\.[0-9]+).*" "\\1" CMAKE_GIT_REPO_VERSION ${GIT_REPO_VERSION})
 string(REGEX REPLACE "^(.......-.*)|(.......)$" "0.0.0" CMAKE_GIT_REPO_VERSION ${CMAKE_GIT_REPO_VERSION}) # fix if all we have is the git SHA
 
-set(GIT_REPO_VERSION v0.7.8)
-set(CMAKE_GIT_REPO_VERSION 0.7.8)
+set(GIT_REPO_VERSION v0.7.10)
+set(CMAKE_GIT_REPO_VERSION 0.7.10)
 set(ENV{GP2040_BOARDCONFIG} Flatbox-LED)
 
 configure_file("headers/version.h.in" "headers/version.h")
